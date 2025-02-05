@@ -9,16 +9,20 @@ body {
     text-align: center;
 }
 
-.snoopy {
-    width: 200px;
-    height: 200px;
-    margin: 20px auto;
+.mensajes {
+    display: flex;
+   flex-wrap wrap; 
+   justify-content center; 
 }
 
-h1 {
-    color: #ff69b4;
+.mensaje {
+   background-color #fff; 
+   padding 20px; 
+   margin 10px; 
+   border-radius 10px; 
+   box-shadow rgba(0,0,0,.1) ;
 }
 
-p {
-    font-size: 18px;
-}
+.mensaje img{
+     width50px ; height50px ; margin-top10px ;  
+   }
