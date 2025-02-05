@@ -1,0 +1,24 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+}
+
+.contenedor {
+    width: 80%;
+    margin: 40px auto;
+    text-align: center;
+}
+
+.snoopy {
+    width: 200px;
+    height: 200px;
+    margin: 20px auto;
+}
+
+h1 {
+    color: #ff69b4;
+}
+
+p {
+    font-size: 18px;
+}
