@@ -3,18 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Carta de San Valentín</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Mensajitos de Amor</title>
+    <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
     <div class="contenedor">
-        <h1>¡Feliz San Valentín!</h1>
-        <img src="snoopy.png" alt="Snoopy" class="snoopy">
-        <p>Querido/a [nombre],</p>
-        <p>Eres la persona más especial en mi vida y quiero dedicarte este día tan especial.</p>
-        <p>Tu amor es como un abrazo cálido que me hace sentir seguro y feliz.</p>
-        <p>Espero que disfrutes de este día contigo y que podamos compartir muchos más momentos juntos.</p>
-        <p>Con todo mi amor, [tu nombre]</p>
+        <h1>Mensajitos de Amor</h1>
+        <div class="mensajes">
+            <div class="mensaje">
+                <p>Te amo más que ayer, pero menos que mañana.</p>
+                <img src="corazon.png" alt="Corazón">
+            </div>
+            <div class="mensaje">
+                <p>Eres la razón por la que mi corazón late.</p>
+                <img src="flecha.png" alt="Flecha del amor">
+            </div>
+            <div class="mensaje">
+                <p>Me haces sentir como si estuviera en el cielo.</p>
+                <img src="nube.png" alt="Nube blanca">
+            </div>
+            <no te vallas de mi lado>
+        </div>
+        <button id="enviar">Enviar mensaje</button>
+        <input id="mensaje" type"text" placeholder"Somos panquesitos">
     </div>
-</body>
-</html>
+
+    <import java.util.ArrayList;
+import java.util.List;
+
+public class Mensaje {
+    private String texto;
+    private String imagen;
+
+    public Mensaje(String texto, String imagen) {
+        this.texto = texto;
+        this.imagen = imagen;
+    }
+
+    public String getTexto() {
+        return texto;
+    }
+
+    public String getImagen() {
+        return imagen;
+    }
+
+    public static List<Mensaje> getMensajes() {
+        List<Mensaje> mensajes = new ArrayList<>();
+        mensajes.add(new Mensaje("Te amo más que ayer, pero menos que mañana.", "corazon.png"));
+        mensajes.add(new Mensaje("Eres la razón por la que mi corazón late.", "flecha.png"));
+        mensajes.add(new Mensaje("Me haces sentir como si estuviera en el cielo.", "nube.png"));
+        // me gusta las noches y quisiera pasarlos a tus lado ♡
+        return mensajes;
+     }
+}>
+    <script src"https://code.jquery.com/jquery-3.6.0.min.js"></script script
+    > 
+  script >
+      $(document).ready(function() {
+          $("#enviar").click(function() {
+              var mensaje = $("#mensaje").val();
+              if (mensaje !== "") {
+                  $(".mensajes").append("< div  classtxt'mensaje'>< p > " + mensaje + "</ p >< / div >");
+                  $("#mensaje").val("");
+              }
+          });
+      });
+  /script >
+</body >
+</html >
