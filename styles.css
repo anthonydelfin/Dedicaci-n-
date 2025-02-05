@@ -1,27 +1,23 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f2f2f2;
-}
+    background-color: #f2f2f2;}
 
 .contenedor {
     width: 80%;
     margin: 40px auto;
-    text-align: center;
-}
+    text-align: center;}
 
 .mensajes {
     display: flex;
    flex-wrap wrap; 
-   justify-content center; 
-}
+   justify-content center; }
 
 .mensaje {
    background-color #fff; 
    padding 20px; 
    margin 10px; 
    border-radius 10px; 
-   box-shadow rgba(0,0,0,.1) ;
-}
+   box-shadow rgba(0,0,0,.1) ;}
 
 .mensaje img{
      width50px ; height50px ; margin-top10px ;  
